@@ -2,9 +2,23 @@
 <html lang="en">
 
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KVNE3P531"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4KVNE3P531');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Three different types of filament for 3d printers, each with 5 colors">
+        <meta name="keywords" content="3d, printers, 3d printers, filament, 3d printer filament, PLA, ABS, TPU">
+        <meta name="author" content="Zachary Reid">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>3D Printer Filament</title>
-
     </head>
 
     <body>
@@ -14,10 +28,10 @@
                     <img src="images/Print_Alchemist_Beaker%20(2).png" alt="Image of logo in header" class="header_img" width="197" height="75">
                 </a>
                 <nav class="header_nav">
-                    <button class="printers" onclick="window.location.href='printers.html'">Printers</button>
-                    <button class="filament" onclick="window.location.href='filament.html'">Filament</button>
-                    <button class="files" onclick="window.location.href='files.html'">Files</button>
-                    <button class="contact" onclick="window.location.href='contact.html'">Contact</button>
+                    <a href="printers.html" class="nav_button">Printers</a>
+                    <a href="filament.html" class="nav_button">Filament</a>
+                    <a href="files.html" class="nav_button">Files</a>
+                    <a href="contact.html" class="nav_button">Contact</a>
                 </nav>
             </div>
         </header>
