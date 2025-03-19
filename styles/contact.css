@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(/images/trianglify-lowres.png); /* adds background image to site */
+    background-image: url("../images/trianglify-lowres.png"); /* adds background image to site */
     background-repeat: no-repeat;                           /* prevents the background from repeating */
     background-size: cover;                                 /* makes the background image size 100% */
 }
