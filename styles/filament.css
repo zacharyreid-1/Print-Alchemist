@@ -1,0 +1,106 @@
+*{
+    margin: 0;                        /* sets all margin to 0 */
+    font-family: sans-serif;          /* sets font family to sans-serif */
+}
+
+body{
+    background-image: url("/images/trianglify-lowres.png"); /* adds background image to site */
+    background-repeat: no-repeat;                           /* prevents the background from repeating */
+    background-size: cover;                                  /* makes the background image size 100% */
+}
+
+/* header */
+
+.header_content{
+    display: flex;                    /* displays all header content in line */
+    align-items: center;              /* aligns all items vertically */
+    margin-top: 5px;                  /* adds margin to the top of the header content */
+    margin-left: 20px;                /* adds margin to left of the header content */
+}
+
+.header_nav{
+    display: flex;                    /* displays header buttons in line */  
+    gap: 100px;                       /* puts a gap between each header button */
+    margin: 0 auto;                   /* aligns nav buttons to center of the page */
+}
+
+.header_nav a{
+    display: flex;                    /* sets display to flex to be able to align text within buttons */
+    background-color: #0D1821;      /* adds a background color to each button */
+    color: white;                   /* changes the text color to white */
+    text-decoration: none;            /* removes the underline from each link */
+    width: 100px;                     /* makes the button width 100px */
+    height: 50px;                     /* makes the button height 50px */
+    border-radius: 25px;              /* makes the border radius 25px */
+    justify-content: center;          /* horizontally aligns text within button */
+    align-items: center;              /* vertically aligns text within button */
+}
+
+.header_nav a:hover{
+    background-color: #142533;      /* changes hover color */
+}
+
+/* body */
+
+main{
+    background-color: white;        /* changes background color to white */
+    padding: 50px;                    /* adds 50px of padding to main section */
+}
+
+.sec_one, .sec_two, .sec_three{
+    margin-bottom: 50px;              /* adds 50px of margin to bottom of each section */
+    display: flex;                    /* allows max-width to be added to text section */
+    flex-direction: column;           /* makes the flex direction column */
+}
+
+.sec_one_text, .sec_two_text, .sec_three_text{  
+    max-width: 1250px;                /* makes max-width of text 1250px */
+    margin-bottom: 20px;              /* adds 20px of margin to the bottom of the text sections */
+}
+
+.sec_one_img, .sec_two_img, .sec_three_img{
+    display: flex;                    /* allows images to align horizontally */
+    justify-content: center;          /* aligns images horizontally */
+    align-items: center;              /* aligns images vertically */
+}
+
+.sec_one_img, .sec_two_img{
+    gap: 100px;                       /* puts a gap of 100px between each image in the first two sections */
+}
+
+.sec_three_img{
+    gap: 25px;                        /* puts a gap of 25px between each image in the last section */
+}
+
+.sec_three_img div div{
+    text-align: center;               /* centers text under TPU filament */
+}
+
+.img:hover{
+    transform: scale(1.1);            /* scales image 1.1 times when hovered over */
+    transition: .1s;                  /* scales image of .1 seconds */
+}
+
+
+/* footer */
+
+.footer_content{
+    display: flex;                    /* allows footer content to align horizontally */
+    justify-content: center;          /* centers footer content horizontally */
+    align-items: center;              /* centers footer content vertically */
+    gap: 20px;                        /* adds a gap of 20px between footer sections */
+    padding: 20px;                    /* adds padding of 20px around footer content */
+}
+
+.sec_copyright{
+    flex-grow: 1;                     /* gives copyright section designated space */
+    text-align: left;                 /* aligns copyright text to the left */
+}
+
+.sec_social{
+    display: flex;                    /* allows social images to be aligned horizontally */
+    gap: 15px;                        /* adds a gap of 15px between social images */
+    position: absolute;               /* sets position to abosluted so images can be precisely positioned */
+    left: 50%;                        /* sets the position of images 50% from the left */
+    transform: translateX(-50%);      /* perfectly centers social images */
+}

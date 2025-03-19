@@ -1,0 +1,108 @@
+*{
+    margin: 0;                        /* sets all margin to 0 */
+    font-family: sans-serif;          /* sets font family to sans-serif */
+}
+
+body{
+    background-image: url("/images/trianglify-lowres.png"); /* adds background image to site */
+    background-repeat: no-repeat;                           /* prevents the background from repeating */
+    background-size: cover;                                 /* makes the background image size 100% */
+}
+
+/* header */
+
+.header_content{
+    display: flex;                    /* displays all header content in line */
+    align-items: center;              /* aligns all items vertically */
+    margin-top: 5px;                  /* adds margin to the top of the header content */
+    margin-left: 20px;                /* adds margin to left of the header content */
+}
+
+.header_nav{
+    display: flex;                    /* displays header buttons in line */  
+    gap: 100px;                       /* puts a gap between each header button */
+    margin: 0 auto;                   /* aligns nav buttons to center of the page */
+}
+
+.header_nav a{
+    display: flex;                    /* sets display to flex to be able to align text within buttons */
+    background-color: #0D1821;      /* adds a background color to each button */
+    color: white;                   /* changes the text color to white */
+    text-decoration: none;            /* removes the underline from each link */
+    width: 100px;                     /* makes the button width 100px */
+    height: 50px;                     /* makes the button height 50px */
+    border-radius: 25px;              /* makes the border radius 25px */
+    justify-content: center;          /* horizontally aligns text within button */
+    align-items: center;              /* vertically aligns text within button */
+}
+
+.header_nav a:hover{
+    background-color: #142533;      /* changes hover color */
+}
+
+/* body */
+
+main{
+    background-color: white;        /* changes background color to white for main section */
+    text-align: center;               /* centers all elements in main section */
+    height: 100vh;                    /* changes height to 100% of viewport */
+    padding-top: 50px;                /* adds 50px of padding to the top of the main seciton */
+}
+
+.input_sec{
+    margin-top: 25px;                 /* adds 25px of margin to the top of the input section */
+}
+
+input{
+    width: 300px;                     /* changes input box width to 300px */
+    height: 37.5px;                   /* changes input box height to 37.5px */
+    font-size: 16px;                  /* changes the font size of the text in the input box to 16px */
+}
+
+textarea{
+    width: 300px;                     /* changes width of textarea box to 300px */
+    height: 100px;                    /* changes height of textarea box to 100px */
+    margin-top: 25px;                 /* adds 25px of margin to the top of the textarea */
+    font-size: 16px;                  /* changes the font size of the text in the textarea box to 16px */
+}
+
+input{
+    margin-bottom: 10px;              /* adds 10px of margin to the bottom of each input box */
+}
+
+.submit{
+    margin-top: 15px;                 /* adds 10px of margin to the top of the submit button */
+    border: none;                     /* removes the border from the submit button */
+    background-color: black;        /* changes the background color of the button to black */
+    color: white;                   /* changes the text color of the submit button to white */
+    padding: 10px 20px;               /* adds 10px of padding to the top and bottom and 20px to the left and right of the submit button */
+    border-radius: 25px;              /* adds a border radius of 25px to the submit button */
+}
+
+.submit:hover{
+    cursor: pointer;                  /* changes the cursor to pointer when hovering over the submit button */
+    background-color: #142533;      /* changes the background color of the button when hovering over it */
+}
+
+/* footer */
+
+.footer_content{
+    display: flex;                    /* allows footer content to align horizontally */
+    justify-content: center;          /* centers footer content horizontally */
+    align-items: center;              /* centers footer content vertically */
+    gap: 20px;                        /* adds a gap of 20px between footer sections */
+    padding: 20px;                    /* adds padding of 20px around footer content */
+}
+
+.sec_copyright{
+    flex-grow: 1;                     /* gives copyright section designated space */
+    text-align: left;                 /* aligns copyright text to the left */
+}
+
+.sec_social{
+    display: flex;                    /* allows social images to be aligned horizontally */
+    gap: 15px;                        /* adds a gap of 15px between social images */
+    position: absolute;               /* sets position to abosluted so images can be precisely positioned */
+    left: 50%;                        /* sets the position of images 50% from the left */
+    transform: translateX(-50%);      /* perfectly centers social images */
+}
