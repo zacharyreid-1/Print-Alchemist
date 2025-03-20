@@ -1,100 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Free information and files for 3d printers">
-        <meta name="keywords" content="3d, printers, 3d printers">
-        <meta name="author" content="Zachary Reid">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+	<head>
+		<title>HTML5 Layout</title>
+		<style type="text/css">
 
-        <link rel="stylesheet" href="styles/index.css">
+			header, section, footer, aside, nav, article, figure, figcaption{
+				display: block;
+			}
 
-        <title>Print Alchemist</title>
-    </head>
+			body{
+				color: #666;
+				background-color: #f9f8f6;
+				background-image: url("images/dark-wood.jpg");
+				font-family: Georgia, 'Times New Roman', Times, serif;
+				line-height: 1.4em;
+				margin: 0px;
+			}
 
-    <body>
-        <header>
-            <div class="header_content">
-                <a href="index.html" class="header_img_link">
-                    <img src="images/Print_Alchemist_Beaker%20(2).png" alt="Image of logo in header" class="header_img" width="197" height="75">
-                </a>
-                <nav class="header_nav">
-                    <a href="printers.html" class="nav_button">Printers</a>
-                    <a href="filament.html" class="nav_button">Filament</a>
-                    <a href="files.html" class="nav_button">Files</a>
-                    <a href="contact.html" class="nav_button">Contact</a>
-                </nav>
-            </div>
-        </header>
+			.wrapper{
+				width: 940px;
+				margin: 20px auto;
+				border: 2px solid #000;
+				background-color: #fff;
+			}
 
-        <main>
-            <div class="sec_top">
-                <div class="logo">
-                    <img src="images/Print_Alchemist_FINAL_Logo.drawio-removebg-preview.png" alt="Primary Logo" class="logo_img" width="500" height="385">
-                </div>
-            </div>
-            <div class="sec_bottom">
-                <div class="left_button">
-                    <button class="left">&lt;</button>
-                </div>
-                <div class="img_gallery">
-                    <div class="gallery">
-                        <a href="files.html#lanyard_clip_img" class="lanyard_clip_link">
-                            <img src="images/Files/6/Lanyard_Piece_Cropped.png" alt="Image of lanyard clip file" class="lanyard_clip" width="250" height="250">
-                        </a>
-                    </div>
-                    <div class="gallery">
-                        <a href="files.html#headset_holder_img" class="headphone_holder_link">
-                            <img src="images/Files/5/Headset_Holder_Cropped.png" alt="Image of headphone holder file" class="headphone_holder" width="250" height="250">
-                        </a>
-                    </div>
-                    <div class="gallery">
-                        <a href="files.html#battery_pack_img" class="wall_mount_link">
-                            <img src="images/Files/1/Battery_Pack_Bracket_Cropped.png" alt="Images of AA battery wall-mount file" class="wall_mount" width="250" height="250">
-                        </a>
-                    </div>
-                    <div class="gallery">
-                        <a href="files.html#phone_stand_img" class="phone_stand_link">
-                            <img src="images/Files/2/Phone_Stand_Cropped.png" alt="Image of phone stand file" class="phone_stand" width="250" height="250">
-                        </a>
-                    </div>
-                    <div class="gallery">
-                        <a href="files.html#gear_img" class="gear_link">
-                            <img src="images/Files/3/Gear_Cropped.png" alt="Image of gear file" class="gear" width="250" height="250">
-                        </a>
-                    </div>
-                </div>
-                <div class="right_button">
-                    <button class="right">&gt;</button>
-                </div>
-            </div>
-        </main>
+			header{
+				height: 160px;
+				background-image: url("images/header.jpg");
+			}
 
-        <footer>
-            <div class="footer_content">
-                <div class="sec_copyright">
-                    <p class="copyright">&copy; Print Alchemist</p>
-                </div>
-                <div class="sec_social">
-                    <div class="mail">
-                        <a href="contact.html" class="mail_link">
-                            <img src="images/Icons/envelope.png" alt="Envelope Icon" class="mail_img" width="50" height="50">
-                        </a>
-                    </div>
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/zachary-reid-3b7ab7299/" class="linkedin_link" target="_blank">
-                            <img src="images/Icons/linkedin.png" alt="LinkedIn Icon" class="linkedin_img" width="50" height="50">
-                        </a>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/zacharyreid-1" class="github_link" target="_blank">
-                            <img src="images/Icons/github.png" alt="Github Icon" class="github_img" width="50" height="50">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
+			h1{
+				text-indent: -9999px;
+				width: 940px;
+				height: 130px;
+				margin: 0px;
+			}
 
+			nav, footer{
+				clear: both;
+				color: #fff;
+				background-color: #aeaca8;
+				height: 30px;
+			}
+
+			nav ul{
+				margin: 0px;
+				padding: 5px 0px 5px 30px;
+			}
+
+			nav li{
+				display: inline;
+				margin-right: 40px;
+			}
+
+			nav li a{
+				color: #fff;
+			}
+
+			nav li a:hover, nav li a.current{
+				color: #000;
+			}
+
+			section.courses{
+				float: left;
+				width: 659px;
+				border-right: 1px solid #eee;
+			}
+
+			article{
+				clear: both;
+				overflow: auto;
+				width: 100%;
+			}
+
+			hgroup{
+				margin-top: 40px;
+			}
+
+			figure{
+				float: left;
+				width: 290px;
+				height: 220px;
+				padding: 5px;
+				margin: 20px;
+				border: 1px solid #eee;
+			}
+
+			figcaption{
+				font-size: 90%;
+				text-align: left;
+			}
+
+			aside{
+				width: 230px;
+				float: left;
+				padding: 0px 0px 0px 20px;
+			}
+
+			aside section a{
+				display: block;
+				padding: 10px;
+				border-bottom: 1px solid #eee;
+			}
+
+			aside section a:hover{
+				color: #985d6a;
+				background-color: #efefef;
+			}
+
+			a{
+				color: #de6581;
+				text-decoration: none;
+			}
+
+			h1, h2, h3{
+				font-weight: normal;
+			}
+
+			h2{
+				margin: 10px 0 5px 0;
+				padding: 0px;	
+			}
+
+			h3{
+				margin: 0 0 10px 0;
+				color: #de6581;
+			}
+
+			aside h2{
+				padding: 30px 0 10px 0px;
+				color: #de6581;
+			}
+
+			footer{
+				font-size: 80%;
+				padding: 7px 0 0 20px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Yoko's Kitchen</h1>
+				<nav>
+					<ul>
+						<li><a href="" class="current">home</a></li>
+						<li><a href="">classes</a></li>
+						<li><a href="">catering</a></li>
+						<li><a href="">about</a></li>
+						<li><a href="">contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+				<article>
+					<figure>
+						<img src="images/bok-choi.jpg" alt="Bok Choi" />
+						<figcaption>Bok Choi</figcaption>
+					</figure>
+					<hgroup>
+						<h2>Japanese Vegetarian</h2>
+						<h3>Five week course in London</h3>
+					</hgroup>
+					<p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+				</article>    
+				<article>
+					<figure>
+						<img src="images/teriyaki.jpg" alt="Teriyaki sauce" />
+						<figcaption>Teriyaki Sauce</figcaption>
+					</figure>
+					<hgroup>
+						<h2>Sauces Masterclass</h2>
+						<h3>One day workshop</h3>
+					</hgroup>
+					<p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+				</article>    
+			</section>
+			<aside>
+				<section class="popular-recipes">
+					<h2>Popular Recipes</h2>
+					<a href="">Yakitori (grilled chicken)</a>
+					<a href="">Tsukune (minced chicken patties)</a>
+					<a href="">Okonomiyaki (savory pancakes)</a>
+					<a href="">Mizutaki (chicken stew)</a>
+				</section>
+				<section class="contact-details">
+					<h2>Contact</h2>
+					<p>Yoko's Kitchen<br />
+						27 Redchurch Street<br />
+						Shoreditch<br />
+						London E2 7DP</p>
+				</section>
+			</aside>
+			<footer>
+				&copy; 2011 Yoko's Kitchen
+			</footer>
+		</div><!-- .wrapper -->
+	</body>
 </html>
