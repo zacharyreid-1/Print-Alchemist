@@ -50,7 +50,10 @@ body{
     display: flex;                    /* allows images to be aligned horizontally */
     background-color: #413F3F;      /* sets background color to dark gray */
     width: 100%;                      /* sets width to 100% */
+    max-width: 1500px;                /* sets max-width to 1500px */
     height: 375px;                    /* sets height to 375px */
+    margin: auto;                     /* centers section */
+    border-radius: 10px;              /* rounds corners of section */
     justify-content: center;          /* aligns images horizontally */
     align-items: center;              /* aligns images vertically */
     position: relative;
@@ -65,8 +68,9 @@ body{
 }
 
 .left:hover, .right:hover{
-    background-color: rgba(0, 0, 0, .1);    /* changes the background color to almost transparent */
+    background-color: rgba(0, 0, 0, .5);    /* changes the background color to almost transparent */
     border-radius: 50px;                      /* changes border radius to 50px */
+    color: white;
 }
 
 .left{
@@ -92,10 +96,6 @@ body{
 
 .img_gallery img{
     border-radius: 25px;              /* adds a border radius around the images */
-}
-
-.gallery{
-    transition: transform 0.5s ease-in-out, opacity 05.s ease-in-out;   /* adds transition for switching images */
 }
 
 .gallery:nth-child(3) img{
