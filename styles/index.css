@@ -65,6 +65,7 @@ body{
     cursor: pointer;                  /* changes the cursor to a pointer when on the button */
     border: none;                     /* removes the border */
     background: none;                 /* removes the background */
+    color: white;
 }
 
 .left:hover, .right:hover{
