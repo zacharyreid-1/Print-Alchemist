@@ -50,7 +50,6 @@ body{
     display: flex;                    /* allows images to be aligned horizontally */
     background-color: #413F3F;      /* sets background color to dark gray */
     width: 100%;                      /* sets width to 100% */
-    max-width: 1500px;                /* sets max-width to 1500px */
     height: 375px;                    /* sets height to 375px */
     margin: auto;                     /* centers section */
     border-radius: 10px;              /* rounds corners of section */
