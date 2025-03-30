@@ -57,6 +57,7 @@ input{
     width: 300px;                     /* changes input box width to 300px */
     height: 37.5px;                   /* changes input box height to 37.5px */
     font-size: 16px;                  /* changes the font size of the text in the input box to 16px */
+    margin-bottom: 10px;              /* adds 10px of margin to the bottom of each input box */
 }
 
 textarea{
@@ -66,8 +67,8 @@ textarea{
     font-size: 16px;                  /* changes the font size of the text in the textarea box to 16px */
 }
 
-input{
-    margin-bottom: 10px;              /* adds 10px of margin to the bottom of each input box */
+form label{
+    display: none;
 }
 
 .submit{
