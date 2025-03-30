@@ -67,10 +67,6 @@ textarea{
     font-size: 16px;                  /* changes the font size of the text in the textarea box to 16px */
 }
 
-form label{
-    display: none;
-}
-
 .submit{
     margin-top: 15px;                 /* adds 10px of margin to the top of the submit button */
     border: none;                     /* removes the border from the submit button */
