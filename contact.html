@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Contact us if you have any questions or suggestions">
-        <meta name="keywords" content="3d, printers, 3d printers, contact, contact us, questions">
-        <meta name="author" content="Zachary Reid">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact us if you have any questions or suggestions">
+    <meta name="keywords" content="3d, printers, 3d printers, contact, contact us, questions">
+    <meta name="author" content="Zachary Reid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact.css">
 
-        <title>Contact Us</title>
-    </head>
+    <title>Contact Us</title>
+</head>
 
-    <body>
-        <header>
-            <div class="header_content">
-                <a href="index.html" class="header_img_link">
-                    <img src="images/Print_Alchemist_Beaker%20(2).png" alt="Image of logo in header" class="header_img" width="197" height="75">
-                </a>
-                <nav class="header_nav">
-                    <a href="printers.html" class="nav_button">Printers</a>
-                    <a href="filament.html" class="nav_button">Filament</a>
-                    <a href="files.html" class="nav_button">Files</a>
-                    <a href="contact.html" class="nav_button">Contact</a>
-                </nav>
+<body>
+    <header>
+        <div class="header_content">
+            <a href="index.html" class="header_img_link">
+                <img src="images/Print_Alchemist_Beaker%20(2).png" alt="Image of logo in header" class="header_img"
+                    width="197" height="75">
+            </a>
+            <nav class="header_nav">
+                <a href="printers.html" class="nav_button">Printers</a>
+                <a href="filament.html" class="nav_button">Filament</a>
+                <a href="files.html" class="nav_button">Files</a>
+                <a href="contact.html" class="nav_button">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page_title">
+            <h1 class="title">Contact Us</h1>
+        </div>
+
+        <form class="input_sec" method="post" action="contact.php">
+            <div class="name_field">
+                <input name="name_input" type="text" id="name_input" aria-label="Name" placeholder="Name" required>
             </div>
-        </header>
-
-        <main>
-            <div class="page_title">
-                <h1 class="title">Contact Us</h1>
+            <div class="email_field">
+                <input name="email_input" type="email" id="email_input" aria-label="Email" placeholder="Email" required>
             </div>
+            <div class="message_field">
+                <textarea name="message_input" id="message_input" aria-label="Message" placeholder="Message"
+                    required></textarea>
+            </div>
+            <div class="submit_button">
+                <button class="submit">Submit</button>
+            </div>
+        </form>
+    </main>
 
-            <form class="input_sec">
-                <div class="name_field">
-                    <input type="text" id="name_input" aria-label="Name" placeholder="Name" required>
+    <footer>
+        <div class="footer_content">
+            <div class="sec_copyright">
+                <p class="copyright">&copy; Print Alchemist</p>
+            </div>
+            <div class="sec_social">
+                <div class="mail">
+                    <a href="contact.html" class="mail_link">
+                        <img src="images/Icons/envelope.png" alt="Envelope Icon" class="mail_img" width="50"
+                            height="50">
+                    </a>
                 </div>
-                <div class="email_field">
-                    <input type="email" id="email_input" aria-label="Email" placeholder="Email" required>
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/zachary-reid-3b7ab7299/" class="linkedin_link" target="_blank">
+                        <img src="images/Icons/linkedin.png" alt="LinkedIn Icon" class="linkedin_img" width="50"
+                            height="50">
+                    </a>
                 </div>
-                <div class="message_field">
-                    <textarea name="message_input" id="message_input" aria-label="Message" placeholder="Message" required></textarea>
-                </div>
-                <div class="submit_button">
-                    <button class="submit">Submit</button>
-                </div>
-            </form>
-        </main>
-
-        <footer>
-            <div class="footer_content">
-                <div class="sec_copyright">
-                    <p class="copyright">&copy; Print Alchemist</p>
-                </div>
-                <div class="sec_social">
-                    <div class="mail">
-                        <a href="contact.html" class="mail_link">
-                            <img src="images/Icons/envelope.png" alt="Envelope Icon" class="mail_img" width="50" height="50">
-                        </a>
-                    </div>
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/zachary-reid-3b7ab7299/" class="linkedin_link" target="_blank">
-                            <img src="images/Icons/linkedin.png" alt="LinkedIn Icon" class="linkedin_img" width="50" height="50">
-                        </a>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/zacharyreid-1" class="github_link" target="_blank">
-                            <img src="images/Icons/github.png" alt="Github Icon" class="github_img" width="50" height="50">
-                        </a>
-                    </div>
+                <div class="github">
+                    <a href="https://github.com/zacharyreid-1" class="github_link" target="_blank">
+                        <img src="images/Icons/github.png" alt="Github Icon" class="github_img" width="50" height="50">
+                    </a>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 
 </html>

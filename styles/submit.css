@@ -1,0 +1,12 @@
+*{
+    margin: 10;                        /* sets all margin to 0 */
+    font-family: sans-serif;          /* sets font family to sans-serif */
+}
+
+h1{
+    text-align: center;
+}
+
+.back{
+    text-align: center;
+}
