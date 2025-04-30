@@ -95,6 +95,48 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            const galleryItems = document.querySelectorAll('.gallery');
+            const leftButton = document.querySelector('.left');
+            const rightButton = document.querySelector('.right');
+        
+            let currentIndex = 2; // default selected image (you can change this)
+        
+            function updateSelection() {
+                galleryItems.forEach((item, i) => {
+                    const img = item.querySelector('img');
+                    if (i === currentIndex) {
+                        img.classList.add('selected');
+                    } else {
+                        img.classList.remove('selected');
+                    }
+                });
+            }
+        
+            leftButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+                updateSelection();
+            });
+        
+            rightButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % galleryItems.length;
+                updateSelection();
+            });
+        
+            // Optional: allow clicking the image to select it directly
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSelection();
+                });
+            });
+        
+            // Initial selection
+            updateSelection();
+        </script>
+              
+
     </body>
 
 </html>

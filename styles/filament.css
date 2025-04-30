@@ -56,6 +56,7 @@ main{
 .sec_one_text, .sec_two_text, .sec_three_text{  
     max-width: 1250px;                /* makes max-width of text 1250px */
     margin-bottom: 20px;              /* adds 20px of margin to the bottom of the text sections */
+    margin: 10px 15%;
 }
 
 .sec_one_img, .sec_two_img, .sec_three_img{

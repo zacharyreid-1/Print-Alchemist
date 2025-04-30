@@ -81,6 +81,19 @@ textarea{
     background-color: #142533;      /* changes the background color of the button when hovering over it */
 }
 
+@media screen and (min-width: 1500px) {
+    input{
+        width: 750px;
+    }
+    textarea{
+        width: 750px;
+    }
+    .submit{
+        width: 300px;
+        height: 50px
+    }
+}
+
 /* footer */
 
 .footer_content{

@@ -93,28 +93,19 @@ body{
     justify-self: center;             /* centers images horizontally */
     align-items: center;              /* centers the images vertically */
     position: relative;               /* sets position to relative */
+    /* gap: 5px; */
 }
 
 .img_gallery img{
     border-radius: 25px;              /* adds a border radius around the images */
+    transition: transform 0.3s ease;
+    transform: scale(.75);
+    z-index: 1;
 }
 
-.gallery:nth-child(3) img{
-    transform: scale(1.5);            /* changes the size of image 3 to 1.5 times */
-    position: relative;               /* sets position to relative for z-index to work */
-    z-index: 3;                       /* sets z-index to 3 so image is above other images */
-}
-
-.gallery:nth-child(2), .gallery:nth-child(4){
-    transform: scale(1.3);            /* changes the size of image to 1.3 times */
-    position: relative;               /* sets position to relative for z-index to work */
-    z-index: 2;                       /* sets z-index to 2 so image is between other images */
-}
-
-.gallery:nth-child(1), .gallery:nth-child(5){
-    transform: scale(1);              /* changes the size of image to 1 times */
-    position: relative;               /* sets position to relative for z-index to work */
-    z-index: 1;                       /* sets z-index to 1 so image is under other images */
+.img_gallery img.selected{
+    transform: scale(1.2);
+    z-index: 3;
 }
 
 /* footer */
